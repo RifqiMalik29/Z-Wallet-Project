@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Payment Confirmation | Zwallet </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../Bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/confirmationstyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; box-shadow: 0px 4px 20px 
+                rgba(0, 0, 0, 0.05);
+        border-radius: 25px;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color:  #6379F4;">Zwallet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active text-center my-auto image">
+                        <a class="nav-link" href="#"> <img class="rounded" src="img/Rectangle 25.svg" alt=""> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-center mx-auto px-2">
+                        <a class="nav-link" id="name" href="#"> Robert Chandler </a>
+                        <a class="nav-link" id="number" href="#"> +62 81082 1324 6509 </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Nomor</a>
+                            </li> -->
+                    <div class="text-center my-auto notif-bell py-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1"> <img class="rounded" src="img/bell.svg" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class=aside>
+            <div class="aside-container py-auto my-3 container">
+                <table class="table table-borderless table-responsive">
+                    <tr style="height: 12vh;">
+                        <th class="align-middle" scope="row" style="
+                        width: 35%; 
+                        text-align: right;
+                        "> <img src="img/grid.svg" alt="">
+                        </th>
+                        <td> </td>
+                        <td class="align-middle" style="
+                    font-style: normal;
+                    font-size: 17px;
+                    color: rgba(58, 61, 66, 0.8);
+                    "> Dashboard </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+
+                    <tr style="height: 12vh;">
+                        <th class="align-middle" scope="row" style="
+                    width: 35%;
+                    text-align: right;
+                    "> <img src="img/arrow-up.svg" alt="">
+                        </th>
+                        <td> </td>
+                        <td class="align-middle" style="
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 17px;
+                        color: #6379F4;
+                        "> Transfer </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+
+                    <tr style="height: 15vh;">
+                        <th class="align-middle" scope="row" style="
+                        width: 35%; 
+                        text-align: right;
+                        "> <img src="img/plus.svg" alt="">
+                        </th>
+                        <td> </td>
+                        <td class="align-middle" style="
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        color: rgba(58, 61, 66, 0.8);
+                        "> Top Up </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+
+                    <tr style="height: 12vh;">
+                        <th scope="row" style="
+                    width: 35%; 
+                    text-align: right;
+                    "> <img src="img/user.svg" alt="">
+                            </td>
+                        <td> </td>
+                        <td class="py-3" style="
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    color: rgba(58, 61, 66, 0.8);
+                    "> User </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+
+                    <tr id="spacing">
+                        <td> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> </td>
+                    </tr>
+
+                    <tr>
+                        <th class="align-center" scope="row" style="
+                    width: 35%; 
+                    text-align: right;
+                    "> <img src="img/log-out.svg" alt="">
+                            </td>
+                        <td> </td>
+                        <td style="
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    color: rgba(58, 61, 66, 0.8);
+                    "> Logout </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+            <main class="main-container container py-auto mb-4">
+                <h5 class="py-5 pl-3"> Transfer to </h5>
+                <table class=" table-2 table table-borderless table-responsive pl-4 ">
+                    <tr class="table-row">
+                        <th scope="row" style="text-align: left;"> <img class="align-self-center" src="img/selfie.svg"
+                                alt="">
+                        </th>
+                        <td style="width: 100%;">
+                            <p> <b> Samuel Suhi </b> </p>
+                            <p style="
+                            line-height: 2px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            color: #7A7886;
+                            "> +62 813-8492-9994 </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h5 class="py-3 pl-3"> Details </h5>
+                <table class="table-3 table table-borderless table-responsive pl-4">
+                    <td>
+                        <p style="color: #7A7886;"> Amount </p>
+                        <p style="line-height: 8px;"> <b>Rp100.000</b> </p>
+                    </td>
+                </table>
+
+                <table class="table-4 table table-responsive table-borderless pl-4">
+                    <td>
+                        <p style="color: #7A7886;"> Balance Left </p>
+                        <p> <b>Rp20.000</b> </p>
+                    </td>
+                </table>
+
+                <table class="table-5 table table-borderless table-responsive pl-4">
+                    <td>
+                        <p style="color: #7A7886;"> Date & Time </p>
+                        <p> <b>May11,2020 - 12.20</b> </p>
+                    </td>
+                </table>
+
+                <table class="table-6 table table-borderless table-responsive pl-4">
+                    <td>
+                        <p style="color: #7A7886;"> Notes </p>
+                        <p> <b> For buying some snacks </b> </p>
+                    </td>
+                </table>
+
+
+                <button class="nav justify-content-center bg ml-auto mt-5" id="continue" data-target="#continues" data-toggle="modal"> Continue
+
+                </button>
+                <!--Start Modal-->
+                <div class="modal fade" id="continues" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
+                        <!--Content-->
+                        <div class="modal-content rounded-0">
+                            <!--Header-->
+                            <div class="modal-header">
+                                <h5 class="heading pin" id="exampleModalCenterTitle">Enter Pin to Transfer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+                                <p class="heading pin2">Enter your 6 digits PIN for confirmation <br> to continue
+                                    transferring
+                                    money.</p>
+                                <div class="form-row d-flex justify-content-center">
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="btn-border" type="text" class="form-control border-primary text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer flex-center">
+                                <a href="success.html" class="btn btn-primary">Continue</a>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!--End Modal-->
+                </div>
+                </div>
+                <!-- End Confirmation -->
+            </main>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="navbar navbar mt-3" style="
+                    width: 100%;
+                    background-color: #6379F4;;
+                    ">
+                <div class="container">
+                    <p class="nav-link" style="
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: rgba(239, 239, 239, 0.9);
+                        "> 2020 Zwallet. All right reserved. </p>
+
+                    <p class="nav-link ml-auto contact1" style="
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        
+                        color: #EFEFEF;
+                        "> +62 5637 8882 9901 </p>
+
+                    <p class="nav-link contact1" style="
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #EFEFEF;
+                        "> contact@zwallet.com </p>
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

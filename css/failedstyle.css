@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    background-color: #fafcff;
+}
+
+/* Navbar Top */
+
+.navbar-light {
+    border-radius: 25px;
+}
+
+.navbar-brand {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+    color: #6379F4;
+}
+
+#name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3A3D42;
+}
+
+#number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    /* margin-bottom: 40px; */
+    line-height: 2px;
+    color: rgba(58, 61, 66, 0.9);
+}
+
+/* ----------------------------- */
+
+/* content */
+
+.aside-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.main-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    width: 100%;
+}
+
+.table-2 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.table-3 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.table-4 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.table-5 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.table-6 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+#continue {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 15%;
+}
+
+.bg {
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+#failed {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #4D4B57;
+}
+
+#long-text {
+    width: 75%;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+
+    color: #7A7886;
+}
+
+#share {
+    grid-area: share;
+    background: rgba(99, 121, 244, 0.15);
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+#download {
+    grid-area: download;
+    background: rgba(99, 121, 244, 0.15);
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+#home {
+    grid-area: home;
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Zwallet/White */
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#link-home {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Zwallet/White */
+
+    color: #FFFFFF;
+}
+
+#link-download {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    /* Zwallet/Primary */
+
+    color: #6379F4;
+}
+
+/* ------------------------------------------ */
+
+/* Responsive Breakpoints */
+
+@media (min-width: 1024px) {
+    .aside {
+        width: 100%;
+        box-sizing: content-box;
+        margin: 20px auto;
+        display: grid;
+        grid-template-areas:
+            'aside main main main main'
+            'aside main main main main'
+            'aside main main main main';
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .aside-container {
+        grid-area: aside;
+        margin: 20px auto;
+    }
+
+    .main-container {
+        grid-area: main;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+
+    .main-container a {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container a {
+        margin-right: auto;
+        font-size: small;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    #spacing {
+        display: none;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 20%;
+    }
+}

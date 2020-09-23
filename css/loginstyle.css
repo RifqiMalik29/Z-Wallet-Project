@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+background: #6379F4;
+}
+
+.bg {
+background-image: url("../img/eye-crossed.svg");
+}
+
+.col {
+margin-top: 120px;
+font-family: Nunito Sans;
+font-weight: bold;
+font-style: normal;
+}
+
+input[type=text] {
+background-image: url("../img/mail.svg");
+background-position: 10px 4px;
+background-repeat: no-repeat;
+background-size: 20px;
+/*padding: 20px 20px 12px 40px;*/
+}
+
+input[type=password] {
+background-image: url("../img/lock.svg");
+background-position: 10px 6px;
+background-repeat: no-repeat;
+background-size: 20px;
+}
+
+input[type=text],
+input[type=password] {
+width: 100%;
+padding: 10px 40px;
+margin: 8px 0;
+display: inline-block;
+border: none;
+border-bottom: 3px solid #ccc;
+/*border-radius: 4px;*/
+box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password] {
+width: 100%;
+padding: 10px 40px;
+margin: 8px 0;
+display: inline-block;
+border: none;
+border-bottom: 3px solid #ccc;
+/*border-radius: 4px;*/
+box-sizing: border-box;
+}
+
+.btn-submit {
+color: #FFFFFF;
+margin-top: 14px;
+padding: 10px 205px;
+border: none;
+border-radius: 12px;
+}
+
+.form-group .btn-submit {
+background-color: #DADADA;
+}

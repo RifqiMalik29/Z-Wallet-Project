@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Home | Zwallet </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../Bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/stylehome.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 25px;">
+            <div class="container">
+                <a class="navbar-brand zwallet" href="home" style="color: #6379F4;">Zwallet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active text-center my-auto image">
+                            <a class="nav-link" href="#"> <img class="rounded" src="img/Rectangle 25.svg" alt=""> <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item text-center mx-auto px-2">
+                            <a class="nav-link" id="name" href="#"> Robert Chandler </a>
+                            <a class="nav-link" id="number" href="#"> +62 81082 1324 6509 </a>
+                        </li>
+                        <div class="text-center my-auto notif-bell py-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1"> <img class="rounded" src="img/bell.svg"
+                                        alt="">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid-container container py-3">
+        <aside class="dashboard aside container py-2 bg">
+            <div class="nav justify-content-center clearfix" id="border">
+                <button type="button" class="btn float-left ml-2 px-4"><img src="img/grid.svg" alt=""></button>
+                <button type="button" class="btn"> <a href="#" class="nav nav-link px-1" id="dashboard">
+                        Dashboard </a>
+                </button>
+            </div>
+
+            <div class="nav py-2 justify-content-center clearfix">
+                <button type="button" class="nav nav-link btn float-left ml-1 px-3"><img src="img/arrow-up.svg"
+                        alt=""></button>
+                <button type="button" class="btn"> <a href="#" class="nav nav-link mx-auto px-auto" id="transfer">
+                        Transfer
+                    </a> </button>
+            </div>
+
+            <div class="nav py-2 justify-content-center clearfix">
+                <button type="button" class="nav nav-link btn float-left"><img src="img/plus.svg" alt=""></button>
+                <button type="button" class="btn "><a href="#" class="nav nav-link mx-auto px-auto" id="top-up">
+                        &nbsp;Top
+                        Up
+                    </a></button>
+            </div>
+
+            <div class="nav py-2 justify-content-center clearfix">
+                <button type="button" class="nav nav-link btn float-left px-3"><img src="img/user.svg" alt=""></button>
+                <button type="button" class="btn"> <a href="#" class="nav nav-link mx-auto px-auto" id="profile">
+                        &nbsp;Profile </a> </button>
+            </div>
+
+            <div id="spacing"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> </div>
+
+            <div class="nav justify-content-center clearfix" id="logout-container">
+                <button type="button" class="nav nav-link ml-3 px-2 btn float-left"><img src="img/log-out.svg"
+                        alt=""></button>
+                <button type="button" class="btn "> <a href="#" class="nav nav-link mx-auto"
+                        id="logout">&nbsp;&nbsp;Logout
+                    </a>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="container clearfix bg-balance">
+                <div class="float-left mx-3">
+                    <p id="balance" class="my-2">
+                        Balance
+                    </p>
+
+                    <h3 class="amount">
+                        Rp120.000
+                    </h3>
+
+                    <p id="number">
+                        +62 813-9387-7946
+                    </p>
+                </div>
+
+                <div class="float-right ">
+                    <button class="btn bg-button btn-block my-3">
+                        <a href="#" class="nav nav-link text-white font-weight-bold"> Transfer </a>
+                    </button>
+                    <button class="btn bg-button btn-block mt-2">
+                        <a href="#" class="nav nav-link text-white font-weight-bold"> Top Up </a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="container bg">
+                <table class="table table-borderless table-responsive">
+                    <tr>
+                        <td class="px-4">
+                            <p>
+                                <b>Transaction History</b>
+                            </p>
+                        </td>
+                        <td class="text-center">
+                            <a class="nav" href="history.html" style="text-decoration: none;">See all</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="table table-borderless table-responsive">
+                    <tr>
+                        <th>
+                            <img src="img/selfie.svg" alt="">
+                        </th>
+                        <td>
+                            <p><b>Samuel Suhi</b></p>
+                            <p>Transfer</p>
+                        </td>
+                        <td>
+                            <p id="green1">+Rp50.000</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="table table-borderless table-responsive">
+                    <th>
+                        <img src="img/cino.png" alt="">
+                    </th>
+                    <td>
+                        <p><b>Christine Mar...</b></p>
+                        <p>Transfer</p>
+                    </td>
+                    <td>
+                        <p id="red1"> -Rp149.000</p>
+                    </td>
+                </table>
+
+                <table class="table table-borderless table-responsive">
+                    <th>
+                        <img src="img/netflix.svg" alt="">
+                    </th>
+                    <td>
+                        <p><b>Netflix</b></p>
+                        <p>Subscription</p>
+                    </td>
+                    <td>
+                        <p id="green2">+Rp150.0000</p>
+                    </td>
+                </table>
+
+                <table class="table table-borderless table-responsive">
+                    <th>
+                        <img src="img/adobe.png" alt="">
+                    </th>
+                    <td>
+                        <p><b>Adobe Inc.</b></p>
+                        <p>Subscription</p>
+                    </td>
+                    <td>
+                        <p id="red2"> -Rp249.000</p>
+                    </td>
+                </table>
+            </div>
+        </aside>
+    </div>
+
+    <div class="chart">
+        <canvas id="canvas"></canvas>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <nav class="navbar navbar mt-3" style="
+                    width: 100%;
+                    background-color: #6379F4;;
+                    ">
+                <div class="container">
+                    <p class="nav-link" style="
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: rgba(239, 239, 239, 0.9);
+                        "> 2020 Zwallet. All right reserved. </p>
+
+                    <p class="nav-link ml-auto contact1" style="
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        
+                        color: #EFEFEF;
+                        "> +62 5637 8882 9901 </p>
+
+                    <p class="nav-link contact1" style="
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #EFEFEF;
+                        "> contact@zwallet.com </p>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- <canvas id="canvas"></canvas> -->
+
+    <script src="js/chart.js"></script>
+
+
+    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/popper.min.js"></script>
+    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0%22%3E"></script>
+</body>
+
+</html>

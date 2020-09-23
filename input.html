@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Input Amount | Zwallet</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../../../Bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/styleinput.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: #ffffff;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          border-radius: 25px;
+        "
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#" style="color: #6379f4">Zwallet</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active text-center my-auto image">
+                <a class="nav-link" href="#">
+                  <img class="rounded" src="img/Rectangle 25.svg" alt="" />
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item text-center mx-auto px-2">
+                <a class="nav-link" id="name" href="#"> Robert Chandler </a>
+                <a class="nav-link" id="number" href="#">
+                  +62 81082 1324 6509
+                </a>
+              </li>
+              <div class="text-center my-auto notif-bell py-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1">
+                    <img class="rounded" src="img/bell.svg" alt="" />
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="grid-container">
+      <aside class="dashboard container bg">
+        <div class="nav py-2 justify-content-center clearfix">
+          <button type="button" class="btn float-left ml-2 px-4">
+            <img src="img/grid (2).svg" alt="" />
+          </button>
+
+          <button type="button" class="btn">
+            <a href="#" class="nav nav-link px-1" id="dashboard"> Dashboard </a>
+          </button>
+        </div>
+
+        <div class="nav py-2 justify-content-center clearfix">
+          <button type="button" class="nav nav-link btn float-left ml-1 px-3">
+            <img src="img/arrow-up (2).svg" alt="" />
+          </button>
+
+          <button type="button" class="btn">
+            <a href="#" class="nav nav-link mx-auto px-auto" id="transfer">
+              Transfer
+            </a>
+          </button>
+        </div>
+
+        <div class="nav py-2 justify-content-center clearfix">
+          <button type="button" class="nav nav-link btn float-left">
+            <img src="img/plus.svg" alt="" />
+          </button>
+
+          <button type="button" class="btn">
+            <a href="#" class="nav nav-link mx-auto px-auto" id="top-up">
+              &nbsp;Top Up
+            </a>
+          </button>
+        </div>
+
+        <div class="nav py-2 justify-content-center clearfix">
+          <button type="button" class="nav nav-link btn float-left px-3">
+            <img src="img/user.svg" alt="" />
+          </button>
+
+          <button type="button" class="btn">
+            <a href="#" class="nav nav-link mx-auto px-auto" id="profile">
+              &nbsp;Profile
+            </a>
+          </button>
+        </div>
+
+        <div class="spacing">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+
+        <div class="nav justify-content-center clearfix" id="logout-container">
+          <button type="button" class="nav nav-link ml-3 px-2 btn float-left">
+            <img src="img/log-out.svg" alt="" />
+          </button>
+
+          <button type="button" class="btn">
+            <a href="#" class="nav nav-link mx-auto" id="logout"
+              >&nbsp;&nbsp;Logout
+            </a>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main container bg">
+        <h3 class="mx-4 py-4 container" id="search">Tranfer Money</h3>
+
+        <table
+          class="table-2 table table-borderless table-responsive pl-4 py-2 bg"
+        >
+          <tr class="table-row">
+            <th scope="row" style="text-align: left">
+              <img class="align-self-center" src="img/selfie.svg" alt="" />
+            </th>
+            <td style="width: 100%">
+              <p><b> Samuel Suhi </b></p>
+              <p class="number">+62 813-8492-9994</p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="container">
+          <p id="type">
+            Type the amount you want to transfer and then<br />
+            press continue to the next steps
+          </p>
+        </div>
+
+        <div class="container">
+          <input type="text" name="Amount" id="amount" placeholder="0.00" />
+        </div>
+
+        <table
+          class="table table-borderless table-responsive mx-auto container width"
+        >
+          <tr>
+            <td>
+              <p><b> Rp120.000 Available</b></p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="container">
+          <input type="text" id="note" placeholder="Add some notes" />
+        </div>
+
+        <div class="spacing">
+          <br />
+          <br />
+        </div>
+
+        <div class="container py-4">
+          <a
+            href="confirmation.html"
+            class="nav justify-content-center bg-link ml-auto mt-5"
+            id="continue"
+          >
+            Continue
+          </a>
+        </div>
+        
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <nav class="navbar navbar mt-3" id="footer-bar">
+          <p class="nav-link" id="reserved">
+            2020 Zwallet. All right reserved.
+          </p>
+
+          <p class="nav-link ml-auto contact1 bottom-footer contact1">
+            +62 5637 8882 9901
+          </p>
+
+          <p class="nav-link contact1 bottom-footer contact1">
+            contact@zwallet.com
+          </p>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

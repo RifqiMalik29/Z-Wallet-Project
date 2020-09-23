@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    background-color: #fafcff;
+}
+
+.navbar-light {
+    border-radius: 25px;
+}
+
+.navbar-brand {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+    color: #6379F4;
+}
+
+#name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    margin-top: 2px;
+    color: #3A3D42;
+}
+
+#number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    /* margin-bottom: 40px; */
+    /* line-height: 24px; */
+    color: rgba(58, 61, 66, 0.9);
+}
+
+/* Right Side */
+
+
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-areas:
+        'sidebar history history history history history'
+        'sidebar history history history history history'
+        'sidebar history history history history history';
+    gap: 30px;
+}
+
+.main-container {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+
+
+/* Transaction History */
+
+.center-container {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.center-container .table-2 {
+    width: 100%;
+    margin: 30px auto;
+}
+
+
+.main-container {
+    grid-area: sidebar;
+}
+
+.center-container {
+    grid-area: history;
+}
+
+/* Breakpoint responsive */
+
+@media (min-width: 320px) {
+    .main {
+        display: inherit;
+    }
+
+    .main-container br {
+        display: none;
+    }
+
+    .container .contact1 {
+        display:none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        display: inherit;
+    }
+
+    .container .contact1 {
+        display: inherit;
+    }
+}
+
+@media (min-width: 992px) {
+    .main {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0px auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-areas:
+            'sidebar history history history history history'
+            'sidebar history history history history history'
+            'sidebar history history history history history';
+        gap: 25px;
+    }
+
+    .main-container br {
+        display: inherit;
+    }
+
+    #navbarNav .notif-bell {
+        margin-top: 20px;
+    }
+
+    #navbarNav .image {
+        margin-top: 10px;
+    }
+
+    .container .contact1 {
+        display: inherit;
+    }
+}

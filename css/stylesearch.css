@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FAFCFF;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+}
+
+/* Header */
+#name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #3A3D42;
+}
+
+#number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 10px;
+    color: rgba(58, 61, 66, 0.9);
+}
+
+/* Dashboard */
+.bg {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+#dashboard {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+#transfer {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    color: #6379F4;
+}
+
+#top-up {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+#profile {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+#logout {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+#logout-container {
+    padding-bottom: 27px;
+}
+
+/* Search Receiver */
+.input-group {
+    width: 90%;
+}
+
+#bg-aside {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+#search {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+.number {
+    line-height: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #7A7886;
+}
+
+.bottom-footer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #EFEFEF;
+}
+
+#reserved {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(239, 239, 239, 0.9);
+}
+
+/* Footer */
+
+
+/* Responsive Breakpoints */
+
+@media (min-width : 1024px){
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'aside main main main'
+        'aside main main main'
+        'aside main main main';
+        gap: 30px;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .section {
+        grid-area: main;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #spacing br {
+        display: none;
+    }
+
+    .dashboard {
+        margin: 20px auto;
+    }
+
+    .section .main-container {
+        margin: 10px auto;
+    }
+
+    .navbar {
+        margin: auto;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    #reserved {
+        font-size: 15px;
+        text-align: center;
+    }
+}

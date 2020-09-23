@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    background-color: #fafcff;
+}
+
+/* Navbar Top */
+
+.navbar-light {
+    border-radius: 25px;
+}
+
+.navbar-brand {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+    color: #6379F4;
+}
+
+#name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3A3D42;
+}
+
+#number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    /* margin-bottom: 40px; */
+    line-height: 2px;
+    color: rgba(58, 61, 66, 0.9);
+}
+
+/* ----------------------------- */
+
+/* content */
+
+.aside-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.main-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    width: 100%;
+}
+
+.table-2 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.table-3 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.table-4 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.table-5 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.table-6 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+#continue {
+    text-decoration: none;
+    color: white;
+    width: 15%;
+}
+
+#suhi {
+    text-decoration: none;
+    color: black;
+}
+
+.bg {
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+/* Confirmation */
+.d-confirm {
+    margin-left: 11px;
+    font-family: Nunito Sans;
+    background: #ffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    margin-bottom: 3px;
+}
+
+.card1 {
+    margin-bottom: 20px;
+}
+
+.s-confirm {
+    margin-top: 20px;
+}
+
+.s-transfer {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.s-details {
+    margin-top: 20px;
+}
+
+.s-det {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.s-fsearch {
+    font-family: Nunito Sans;
+    border: 20px solid #3A3D42;
+    box-shadow: 0 0 0 1px #3A3D42;
+    color: #3A3D42;
+}
+
+.c-Pconfirm {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin: 10px;
+    left: 10px;
+}
+
+.c-Name {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    line-height: 55px;
+    height: 25px;
+}
+
+.c-No {
+    font-family: Nunito Sans;
+    font-weight: normal;
+}
+
+.c-name {
+    padding-top: 10px;
+    /* margin-left:80px; */
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4B57;
+}
+
+.c-status {
+    /* margin-left:80px; */
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
+
+/* #modal {
+    border-radius: 20px;
+} */
+
+#btn-border {
+    width: 50px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #6379F4;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+    border-radius: 10px;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 41px;
+    color: #3A3D42;
+}
+
+/* End Confirmation */
+
+/* ------------------------------------------ */
+
+/* Responsive Breakpoints */
+
+@media (min-width: 1024px){
+    .aside {
+        width: 100%;
+        box-sizing: content-box;
+        margin: 20px auto;
+        display: grid;
+        grid-template-areas: 
+        'aside main main main main'
+        'aside main main main main';
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .aside-container {
+        grid-area: aside;
+        margin: 20px auto;
+    }
+
+    .main-container {
+        grid-area: main;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+
+    .main-container a {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 768px){
+    .main-container a {
+        margin-right: auto;
+        font-size: small;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    #spacing {
+        display: none;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 20%;
+    }
+
+    #continue {
+        width: 100%;
+        margin-right: auto;
+    }
+}

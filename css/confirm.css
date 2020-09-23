@@ -1,0 +1,119 @@
+/* Start Confirmation */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Nunito Sans;
+}
+
+.d-confirm {
+    margin-left: 11px;
+    font-family: Nunito Sans;
+    background: #ffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    margin-bottom: 3px;
+}
+
+.card1 {
+    margin-bottom: 20px;
+}
+
+.s-confirm {
+    margin-top: 20px;
+}
+
+.s-transfer {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.s-details {
+    margin-top: 20px;
+}
+
+.s-det {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.s-fsearch {
+    font-family: Nunito Sans;
+    border: 20px solid #3A3D42;
+    box-shadow: 0 0 0 1px #3A3D42;
+    color: #3A3D42;
+}
+
+.c-Pconfirm {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin: 10px;
+    left: 10px;
+}
+
+.c-Name {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    line-height: 55px;
+    height: 25px;
+}
+
+.c-No {
+    font-family: Nunito Sans;
+    font-weight: normal;
+}
+
+.c-name {
+    padding-top: 10px;
+    /* margin-left:80px; */
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4B57;
+}
+
+.c-status {
+    /* margin-left:80px; */
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
+
+/* #modal {
+    border-radius: 20px;
+} */
+
+#btn-border {
+    width: 50px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #6379F4;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+    border-radius: 10px;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 41px;
+    color: #3A3D42;
+}
+
+/* End Confirmation */
