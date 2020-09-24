@@ -2,240 +2,249 @@
 <html lang="en">
 
 <head>
-    <title> Home | Zwallet </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../../Bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- font nurito sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/stylehome.css">
+    <link rel="stylesheet" type="text/css" href="css/stylehome.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Home</title>
 </head>
 
 <body>
 
+    <!-- navbar -->
+    <nav class="navbar shadow p-3 mb-4 bg-white">
+        <div class="container">
+            <a class="navbar-brand">Zwallet</a>
+            <form class="form-inline">
+                <img class="mr-3" src="img/Rectangle 25.svg">
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-            border-radius: 25px;">
-            <div class="container">
-                <a class="navbar-brand zwallet" href="home" style="color: #6379F4;">Zwallet</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active text-center my-auto image">
-                            <a class="nav-link" href="#"> <img class="rounded" src="img/Rectangle 25.svg" alt=""> <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item text-center mx-auto px-2">
-                            <a class="nav-link" id="name" href="#"> Robert Chandler </a>
-                            <a class="nav-link" id="number" href="#"> +62 81082 1324 6509 </a>
-                        </li>
-                        <div class="text-center my-auto notif-bell py-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" tabindex="-1"> <img class="rounded" src="img/bell.svg"
-                                        alt="">
-                                </a>
-                            </li>
+                <p class="pt-1"><b>Robert Chandler</b><br>
+                    <small>+62 8139 3877 7946 </small></p>
+                <img class="ml-4" src="img/bell.svg">
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col1 col-md-2 mt-1 shadow p-3 mb-1 bg-white" style="background-color: #FFFFFF;">
+                <p style="color: #6379F4"><a class="dashboardd mt-4" href="#"><img class="mr-3"
+                            src="img/grid.svg">Dashboard</a></p>
+                <p class="mt-5"><img class="mr-3" src="img/arrow-up.svg">Transfer</p>
+                <p class="mt-5"><img class="mr-3" src="img/plus.svg">Top Up</p>
+                <p class="mt-5 mb-5"><img class="mr-3" src="img/user.svg">Profile</p>
+                <p class="mt-5 mb-5"><img class="mr-3" src="img/log-out.svg">Logout</p>
+            </div>
+
+            <div class="col col-md-9 ml-3 ">
+                <div class="row col2 p-3 mt-1 mb-5 shadow mb-1 pb-5">
+                    <div class="col2 col-sm-12 col-md-9 flex-column text-white">
+                        <!-- <div class="card text-white"> -->
+                        <!-- <div class="card-body"> -->
+                        <p class=""><small>Balance</small></p>
+                        <h3 class="card-text">Rp120.000</h3>
+                        <p><small>+62 813-9387-7946</small></p>
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="col2 col-sm-12 col-md-3 flex-column">
+
+                        <button type="button" class="btn btn-outline-light btn-md btn-block balance-button "><img
+                                width="28" height="28" class="transfer"
+                                src="img/arrow-up-white.svg">Transfer</button>
+                        <button type="button" class="btn btn-outline-light btn-md btn-block balance-button"><img
+                                width="28" height="28" src="img/plus-white.svg">Top Up</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-sm-12 col-md-6 flex-column ">
+                        <div class="col3 pt-3 mb-5 bg-white shadow pb-2">
+                            <div class="row">
+                                <div class="mb-5 col flex-column text-dark ml-3">
+                                    <!-- <div class="card text-white"> -->
+                                    <!-- <div class="card-body"> -->
+                                    <img src="img/arrow-down.svg">
+                                    <p class=""><small>Income</small></p>
+                                    <h5 class="card-text">Rp2.120.000</h5>
+
+                                </div>
+                                <div class="col flex-column text-dark ml-3">
+                                    <img src="img/arrow-up-red.svg">
+                                    <p class=""><small>Expense</small></p>
+                                    <h5 class="card-text">Rp1.560.000</h5>
+                                </div>
+                                <canvas id="myChart" width="300" height="200"></canvas>
+                            </div>
                         </div>
-                    </ul>
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="col3 col-sm-12 col-md-6 flex-column pt-3 mb-5 bg-white shadow pb-2">
+                        <!-- <div class="col3 pt-3 mb-5 bg-white shadow pb-2"> -->
+                        <div class="row">
+                            <div class="mb-1 col flex-column text-dark">
+                                <p><b>Transaction History</b></p>
+                            </div>
+                            <div class="col flex-column text-dark ml-3">
+                                <p class="seeAll text-right mr-3"><a href="history.html" style="text-decoration: none;"><small>See All</small></a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" mb-1 col flex-column text-dark">
+                                <form class="form-inline">
+                                    <img class="mr-4" src="img/selfie.svg">
+                                    <p class="pt-1">Samuel Suhi<br>
+                                        <small class="text-muted">Transfer </small></p><br>
+                                </form>
+                            </div>
+                            <div class="col flex-column text-dark ml-3">
+                                <p class="text-right w-100" style="color: #1EC15F;">+Rp50.000</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" mb-1 col flex-column text-dark">
+                                <form class="form-inline mt-3">
+                                    <img class="  pr-4" src="img/netflix.svg">
+                                    <p class="pt-1">Netflix<br>
+                                        <small class="text-muted">Subscription</small></p><br>
+                                </form>
+                            </div>
+                            <div class="col flex-column text-dark ml-3">
+                                <p class="text-right w-100 mt-4" style="color: #FF5B37;">-Rp149.000</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class=" mb-1 mt-2 col flex-column text-dark">
+                                <form class="form-inline">
+                                    <img class="mr-3" src="img/cino.png">
+                                    <p class="pt-1">Christine Mar..<br>
+                                        <small class="text-muted">Transfer</small></p><br>
+                                </form>
+                            </div>
+
+                            <div class="col flex-column text-dark ml-3">
+                                <p class="text-right w-100 mt-3" style="color: #1EC15F;">+Rp150.000</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" mb-1 col flex-column text-dark">
+                                <form class="form-inline">
+                                    <img class="mt-1 mr-3" src="img/adobe.png">
+                                    <p class="pt-1 mt-4"><b>Adobe Inc.</b><br>
+                                        <small class="text-muted">Subscription</small></p><br>
+                                </form>
+                            </div>
+
+                            <div class="col flex-column text-dark ml-3 mt-4">
+                                <p class="text-right w-100" style="color: #FF5B37;">-Rp249.000</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <div class="grid-container container py-3">
-        <aside class="dashboard aside container py-2 bg">
-            <div class="nav justify-content-center clearfix" id="border">
-                <button type="button" class="btn float-left ml-2 px-4"><img src="img/grid.svg" alt=""></button>
-                <button type="button" class="btn"> <a href="#" class="nav nav-link px-1" id="dashboard">
-                        Dashboard </a>
-                </button>
-            </div>
-
-            <div class="nav py-2 justify-content-center clearfix">
-                <button type="button" class="nav nav-link btn float-left ml-1 px-3"><img src="img/arrow-up.svg"
-                        alt=""></button>
-                <button type="button" class="btn"> <a href="#" class="nav nav-link mx-auto px-auto" id="transfer">
-                        Transfer
-                    </a> </button>
-            </div>
-
-            <div class="nav py-2 justify-content-center clearfix">
-                <button type="button" class="nav nav-link btn float-left"><img src="img/plus.svg" alt=""></button>
-                <button type="button" class="btn "><a href="#" class="nav nav-link mx-auto px-auto" id="top-up">
-                        &nbsp;Top
-                        Up
-                    </a></button>
-            </div>
-
-            <div class="nav py-2 justify-content-center clearfix">
-                <button type="button" class="nav nav-link btn float-left px-3"><img src="img/user.svg" alt=""></button>
-                <button type="button" class="btn"> <a href="#" class="nav nav-link mx-auto px-auto" id="profile">
-                        &nbsp;Profile </a> </button>
-            </div>
-
-            <div id="spacing"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> </div>
-
-            <div class="nav justify-content-center clearfix" id="logout-container">
-                <button type="button" class="nav nav-link ml-3 px-2 btn float-left"><img src="img/log-out.svg"
-                        alt=""></button>
-                <button type="button" class="btn "> <a href="#" class="nav nav-link mx-auto"
-                        id="logout">&nbsp;&nbsp;Logout
-                    </a>
-                </button>
-            </div>
-        </aside>
-
-        <main class="main">
-            <div class="container clearfix bg-balance">
-                <div class="float-left mx-3">
-                    <p id="balance" class="my-2">
-                        Balance
-                    </p>
-
-                    <h3 class="amount">
-                        Rp120.000
-                    </h3>
-
-                    <p id="number">
-                        +62 813-9387-7946
-                    </p>
-                </div>
-
-                <div class="float-right ">
-                    <button class="btn bg-button btn-block my-3">
-                        <a href="#" class="nav nav-link text-white font-weight-bold"> Transfer </a>
-                    </button>
-                    <button class="btn bg-button btn-block mt-2">
-                        <a href="#" class="nav nav-link text-white font-weight-bold"> Top Up </a>
-                    </button>
-                </div>
-            </div>
-        </main>
-
-        <aside class="sidebar">
-            <div class="container bg">
-                <table class="table table-borderless table-responsive">
-                    <tr>
-                        <td class="px-4">
-                            <p>
-                                <b>Transaction History</b>
-                            </p>
-                        </td>
-                        <td class="text-center">
-                            <a class="nav" href="history.html" style="text-decoration: none;">See all</a>
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="table table-borderless table-responsive">
-                    <tr>
-                        <th>
-                            <img src="img/selfie.svg" alt="">
-                        </th>
-                        <td>
-                            <p><b>Samuel Suhi</b></p>
-                            <p>Transfer</p>
-                        </td>
-                        <td>
-                            <p id="green1">+Rp50.000</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="table table-borderless table-responsive">
-                    <th>
-                        <img src="img/cino.png" alt="">
-                    </th>
-                    <td>
-                        <p><b>Christine Mar...</b></p>
-                        <p>Transfer</p>
-                    </td>
-                    <td>
-                        <p id="red1"> -Rp149.000</p>
-                    </td>
-                </table>
-
-                <table class="table table-borderless table-responsive">
-                    <th>
-                        <img src="img/netflix.svg" alt="">
-                    </th>
-                    <td>
-                        <p><b>Netflix</b></p>
-                        <p>Subscription</p>
-                    </td>
-                    <td>
-                        <p id="green2">+Rp150.0000</p>
-                    </td>
-                </table>
-
-                <table class="table table-borderless table-responsive">
-                    <th>
-                        <img src="img/adobe.png" alt="">
-                    </th>
-                    <td>
-                        <p><b>Adobe Inc.</b></p>
-                        <p>Subscription</p>
-                    </td>
-                    <td>
-                        <p id="red2"> -Rp249.000</p>
-                    </td>
-                </table>
-            </div>
-        </aside>
+        </div>
     </div>
 
-    <div class="chart">
-        <canvas id="canvas"></canvas>
-    </div>
-    <footer>
-        <div class="footer-container">
-            <nav class="navbar navbar mt-3" style="
-                    width: 100%;
-                    background-color: #6379F4;;
-                    ">
-                <div class="container">
-                    <p class="nav-link" style="
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            color: rgba(239, 239, 239, 0.9);
-                        "> 2020 Zwallet. All right reserved. </p>
 
-                    <p class="nav-link ml-auto contact1" style="
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 16px;
-                        
-                        color: #EFEFEF;
-                        "> +62 5637 8882 9901 </p>
+    <footer class="text-white fix-bottom">
+        <div class="container-fluid mt-4" style="background-color: #6379F4">
+            <!-- pt 3 yaitu dikasi padding top 3 agar tidak teralu menempel huru dengan batasnya -->
+            <div class="row pt-2">
+                <div class="col-md-6">
+                    <p><small class="ml-5">2020 Zwallet. All right reserved.</small></p>
 
-                    <p class="nav-link contact1" style="
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 16px;
-                        color: #EFEFEF;
-                        "> contact@zwallet.com </p>
-            </nav>
+                </div>
+                <div class="col-md-6">
+                    <p><small class="mr-5">+62 5637 8882 9901</small><small class="ml-5">contact@zwallet.com</small></p>
+                </div>
+            </div>
+        </div>
         </div>
     </footer>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+                datasets: [{
+                    label: 'Balance',
+                    data: [100, 30, 50, 75, 60, 90, 55],
+                    barPercentage: .5,
+                    backgroundColor: [
+                        '#6379f4',
+                        '#6379f4',
+                        '#9DA6B5',
+                        '#9DA6B5',
+                        '#9DA6B5',
+                        '#6379f4',
+                        '#9DA6B5'
+                    ],
+                    // borderColor: [
+                    //     'rgba(255, 99, 132, 1)',
+                    //     'rgba(54, 162, 235, 1)',
+                    //     'rgba(255, 206, 86, 1)',
+                    //     'rgba(75, 192, 192, 1)',
+                    //     'rgba(153, 102, 255, 1)',
+                    //     'rgba(255, 159, 64, 1)'
+                    // ],
+                    // borderWidth: 1
+                }]
+            },
+            options: {
+                radius: 200,
+                legend: {
+                    display: false,
+                    labels: {
+                        fontColor: 'rgb(255,99,132)'
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            display: false
+                        },
+                        gridLines: {
+                            display: false
+                            // offsetGridLines: tue
+                        }
+                    }],
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <!-- <canvas id="canvas"></canvas> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
 
-    <script src="js/chart.js"></script>
-
-
-    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/popper.min.js"></script>
-    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../../../Bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0%22%3E"></script>
 </body>
 
 </html>
